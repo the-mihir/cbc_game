@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+	  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-side-modals.css">
+      <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="css/example.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <title>Coin Info</title>
+   </head>
+    <body id="body-pd">
+      <header class="header" id="header">
+         <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+         </div>
+         <div class="header__img">
+            <!-- <img src="images/logo.png" alt="" width="150px"> -->
+         </div>
+         <div class="right-icon">
+            <a data-toggle="modal" data-target="#staticBackdrop" class="btn btn-primary coin-btn">Log In</a>
+           
+         </div>
+      </header>
+      <div class="l-navbar navbar navbar-fixed-left navbar-minimal animate open" id="nav-bar">
+         <nav class="nav">
+            <div>
+               <a href="index.html" class="nav__logo">
+               <img src="images/resposive-logo.png" alt="" width="25px">
+               <span class="nav__logo-name"><img src="images/text-logo.png" alt="" width="100px"></span>
+               </a>
+               <div class="nav__list">
+                  <a href="index.html" class="nav__link ">
+                  <img src="images/icon (2).png" alt="" width="25px">
+                  <span class="nav__name">Home</span>
+                  </a>
+                  <a href="add-coin.html" class="nav__link ">
+                  <img src="images/icon (2).png" alt="" width="25px">
+                  <span class="nav__name">Add Coin</span>
+                  </a>
+                  <a href="coin-info.html" class="nav__link active">
+                  <img src="images/icon (3).png" alt="" width="25px">
+                  <span class="nav__name">Coin Info</span>
+                  </a>
+                  <a href="#" class="nav__link">
+                     <img src="images/icon (3).png" alt="" width="25px">
+                     <div class="modal-language pd">
+                        <span class="nav__name">Language Options</span><br>
+                        <select name="" id="">
+                           <option value="">English</option>
+                           <option value="">Bangla</option>
+                           <option value="">Hindi</option>
+                           <option value="">Spenich</option>
+                           <option value="">English</option>
+                        </select>
+                     </div>
+                  </a>
+                  <div class="dark-mood d-flex justify-content-between">
+                     <label class="switch nav__name">
+                        <input type="checkbox"  onclick="myFunction()">
+                        <span class="slider round checked "></span>
+                        <div class="img"><img src="images/moon.png" alt="" width="10px"></div>
+                        <div class="imgtwo"><img src="images/sun.png" alt="" width="10px"></div>
+                     </label>
+                     <span class="nav__name">Dark Mode Changing</span>
+                  </div>
+                  <hr>
+                  <a href="#" class="nav__link support">
+                  <img src="images/headphone.png" width="25px" style="margin-top: -3px;">
+                  <span class="nav__name">Live Support</span>
+                  </a>
+                  <div class="modal-social">
+                     <h6>Social Media</h6>
+                     <ul>
+                        <a href=""><img src="images/log (1).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (2).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (3).png" alt="" width="30px"></a><br><br>
+                        <a href=""><img src="images/log (4).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (5).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (6).png" alt="" width="30px"></a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade login-modal " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content loginmodal">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">BC GAME</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="log-in">
+                     <form action="">
+                        <div class="email">
+                           <label for="">Email</label>
+                           <input type="text" placeholder="Email">
+                        </div>
+                        <div class="password">
+                           <div class="d-flex justify-content-between">
+                              <label for="">Password</label>
+                              <a href="">Forget Password?</a>
+                           </div>
+                           <input type="password" placeholder="Password">
+                        </div>
+                        <hr>
+                        <div class="log-btn">
+                           <input type="submit" value="sign in">
+                           <input type="submit" value="sign up">
+                        </div>
+                        <div class="deraict-log">
+                           <p>Log in directly with</p>
+                           <ul>
+                              <li>
+                                 <a href=""><img src="images/log (1).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (2).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (3).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (4).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (5).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (6).png" alt="" width="30px"></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- log in modal -->
+      <!--Signin Modal -->
+      <div class="modal fade login-modal signup" id="signup" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content loginmodal">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">BC GAME</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="log-in">
+                     <form action="">
+                        <div class="email">
+                           <label for="">Email</label>
+                           <input type="text" placeholder="Email">
+                        </div>
+                        <div class="password email">
+                           <div class="d-flex justify-content-between">
+                              <label for="">Password</label>
+                           </div>
+                           <input type="password" placeholder="Password">
+                        </div>
+                        <div class="agree d-flex justify-content-start">
+                           <input type="checkbox">
+                           <label for="">I agree with <a href="">  user agreement</a>, and confirm that I am at least 18 years old!</label>
+                        </div>
+                        <div class="email">
+                           <div class="d-flex justify-content-between">
+                              <label for="">Referral/Promo Code (Optional)</label>
+                           </div>
+                           <input type="text" placeholder="Promo Code">
+                        </div>
+                        <hr>
+                        <div class="log-btn">
+                           <input type="submit" value="sign in">
+                           <input type="submit" value="sign up">
+                        </div>
+                        <div class="deraict-log">
+                           <p>Log in directly with</p>
+                           <ul>
+                              <li>
+                                 <a href=""><img src="images/log (1).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (2).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (3).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (4).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (5).png" alt="" width="30px"></a>
+                                 <a href=""><img src="images/log (6).png" alt="" width="30px"></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- log in modal -->
+      <!-- Chat Modal -->
+      <div class="modal modal-right fade" id="right_modal_sm" tabindex="-1" role="dialog" aria-labelledby="right_modal_sm">
+         <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="modal-language">
+                     <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">Bangla</option>
+                        <option value="">Hindi</option>
+                        <option value="">Spenich</option>
+                        <option value="">English</option>
+                     </select>
+                  </div>
+                  <h5 class="modal-title chat-area">
+                     <a href="" data-toggle="modal" data-target="#regular_modal"><i class="fas fa-exclamation-circle"></i></a>
+                     <a href=""><i class="fas fa-exclamation-circle"></i></a>
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="modal-chating d-flex justify-content-start">
+                           <div class="chat-user">
+                              <a href=""><img src="images/user.png" alt="" width="40px"></a>
+                           </div>
+                           <div class="chat-user-text">
+                              <div class="user-name d-flex justify-content-between">
+                                 <p class="name">SonicScrewer</p>
+                                 <p class="time"> 17:38</p>
+                              </div>
+                              <div class="user-massage">
+                                 <p>I hate yall 😂 this damn gummy worm gif mesmerizes me</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- one chat end -->
+                        <div class="modal-chating d-flex justify-content-start">
+                           <div class="chat-user">
+                              <a href=""><img src="images/user.png" alt="" width="40px"></a>
+                           </div>
+                           <div class="chat-user-text">
+                              <div class="user-name d-flex justify-content-between">
+                                 <p class="name">SonicScrewer</p>
+                                 <p class="time"> 17:38</p>
+                              </div>
+                              <div class="user-massage">
+                                 <p>I hate yall 😂 this damn gummy worm gif mesmerizes me</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- one chat end -->
+                        <div class="modal-chating d-flex justify-content-start">
+                           <div class="chat-user">
+                              <a href=""><img src="images/user.png" alt="" width="40px"></a>
+                           </div>
+                           <div class="chat-user-text">
+                              <div class="user-name d-flex justify-content-between">
+                                 <p class="name">SonicScrewer</p>
+                                 <p class="time"> 17:38</p>
+                              </div>
+                              <div class="user-massage">
+                                 <p>I hate yall 😂 this damn gummy worm gif mesmerizes me</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- one chat end -->
+                        <div class="modal-chating d-flex justify-content-start">
+                           <div class="chat-user">
+                              <a href=""><img src="images/user.png" alt="" width="40px"></a>
+                           </div>
+                           <div class="chat-user-text">
+                              <div class="user-name d-flex justify-content-between">
+                                 <p class="name">SonicScrewer</p>
+                                 <p class="time"> 17:38</p>
+                              </div>
+                              <div class="user-massage">
+                                 <p>I hate yall 😂 this damn gummy worm gif mesmerizes me</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- one chat end -->
+                        <div class="modal-chating d-flex justify-content-start">
+                           <div class="chat-user">
+                              <a href=""><img src="images/user.png" alt="" width="40px"></a>
+                           </div>
+                           <div class="chat-user-text">
+                              <div class="user-name d-flex justify-content-between">
+                                 <p class="name">SonicScrewer</p>
+                                 <p class="time"> 17:38</p>
+                              </div>
+                              <div class="user-massage">
+                                 <p>I hate yall 😂 this damn gummy worm gif mesmerizes me</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- one chat end -->
+                        <div class="modal-chating d-flex justify-content-start">
+                           <div class="chat-user">
+                              <a href=""><img src="images/user.png" alt="" width="40px"></a>
+                           </div>
+                           <div class="chat-user-text">
+                              <div class="user-name d-flex justify-content-between">
+                                 <p class="name">SonicScrewer</p>
+                                 <p class="time"> 17:38</p>
+                              </div>
+                              <div class="user-massage">
+                                 <p>I hate yall 😂 this damn gummy worm gif mesmerizes me</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- one chat end -->
+                     </div>
+                  </div>
+                  <div class="chat-fixed">
+                     <div class="massage-area">
+                        <form action="">
+                           <input type="text" placeholder="Write your text..">
+                           <a href=""><i class="fas fa-smile"></i></a>
+                        </form>
+                     </div>
+                     <div class="chat-bottom d-flex justify-content-between">
+                        <div class="chat-icon">
+                           <a href=""><i class="fas fa-tint"></i></a>
+                           <a href=""><i class="fas fa-edit"></i></a>
+                           <a href=""><i class="fab fa-btc"></i></a>
+                        </div>
+                        <div class="chat-icon-right">
+                           <a href=""><i class="fas fa-gift"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+               </div>
+               <!--  -->
+            </div>
+         </div>
+      </div>
+      <!-- modal start -->
+      <div class="modal modal-left fade" id="left_modal_sm" tabindex="-1" role="dialog" aria-labelledby="left_modal_sm">
+         <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title"><a href=""><img src="images/logo.png" alt="" width="200px"></a></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="moadal-top-menu">
+                     <ul>
+                        <li><a href="index.html" class="active"><img src="images/icon (1).png" alt="" width="25px"> Home</a> </a></li>
+                        <li><a href="add-coin.html"><img src="images/icon (2).png" alt="" width="25px"> Add Coin</a> </a></li>
+                        <li><a href="coin-info.html"><img src="images/icon (3).png" alt="" width="25px"> Coin Info</a> </a></li>
+                        <li><a href=""><img src="images/icon (4).png" alt="" width="25px"> Furam</a> </a></li>
+                     </ul>
+                  </div>
+                  <!--menu  -->
+                  <hr>
+                  <div class="modal-language pd">
+                     <span>Language Options</span>
+                     <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">Bangla</option>
+                        <option value="">Hindi</option>
+                        <option value="">Spenich</option>
+                        <option value="">English</option>
+                     </select>
+                  </div>
+                  <hr>
+                  <!-- language -->
+                  <div class="dark-mood">
+                     <p>Dark Mode Changing</p>
+                     <label class="switch">
+                        <input type="checkbox"  onclick="myFunction()">
+                        <span class="slider round checked"></span>
+                        <div class="img"><img src="images/moon.png" alt="" width="10px"></div>
+                        <div class="imgtwo"><img src="images/sun.png" alt="" width="10px"></div>
+                     </label>
+                  </div>
+                  <!-- dark -->
+                  <hr>
+                  <div class="support">
+                     <a href=""><img src="images/headphone.png" width="38px" style="margin-top: -3px;"> Live Support</a>
+                  </div>
+                  <!-- support -->
+                  <hr>
+                  <div class="modal-social">
+                     <h6>Social Media</h6>
+                     <ul>
+                        <a href=""><img src="images/log (1).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (2).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (3).png" alt="" width="30px"></a><br><br>
+                        <a href=""><img src="images/log (4).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (5).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (6).png" alt="" width="30px"></a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ==================
+         Modal End Here
+         =====================-->
+      <div class="top-bar">
+         <div class="costume-container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="top-icon d-flex justify-content-between">
+                     <div class="left-icon">
+                        <a href="" class="main-logo"><img src="images/logo.png" alt="" width="200px"></a>
+                        <a href="" class="responsive-logo"><img src="images/resposive-logo.png" alt="" width="200px"></a>
+                        <a href="" class="hubmerger-icon"  data-toggle="modal" data-target="#left_modal_sm"><i class="fas fa-bars"></i></a>
+                     </div>
+                     <div class="right-icon">
+                        <a data-toggle="modal" data-target="#staticBackdrop" class="btn btn-primary coin-btn">Log In</a>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--  -->
+            <!-- Modal -->
+            <div class="modal fade login-modal " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content loginmodal">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">BC GAME</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="log-in">
+                           <form action="">
+                              <div class="email">
+                                 <label for="">Email</label>
+                                 <input type="text" placeholder="Email">
+                              </div>
+                              <div class="password">
+                                 <div class="d-flex justify-content-between">
+                                    <label for="">Password</label>
+                                    <a href="">Forget Password?</a>
+                                 </div>
+                                 <input type="password" placeholder="Password">
+                              </div>
+                              <hr>
+                              <div class="log-btn">
+                                 <input type="submit" value="sign in">
+                                 <input type="submit" value="sign up">
+                              </div>
+                              <div class="deraict-log">
+                                 <p>Log in directly with</p>
+                                 <ul>
+                                    <li>
+                                       <a href=""><img src="images/log (1).png" alt="" width="30px"></a>
+                                       <a href=""><img src="images/log (2).png" alt="" width="30px"></a>
+                                       <a href=""><img src="images/log (3).png" alt="" width="30px"></a>
+                                       <a href=""><img src="images/log (4).png" alt="" width="30px"></a>
+                                       <a href=""><img src="images/log (5).png" alt="" width="30px"></a>
+                                       <a href=""><img src="images/log (6).png" alt="" width="30px"></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- log in modal -->
+         </div>
+      </div>
+      <!-- modal start -->
+      <div class="modal modal-left fade" id="left_modal_sm" tabindex="-1" role="dialog" aria-labelledby="left_modal_sm">
+         <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title"><a href=""><img src="images/logo.png" alt="" width="200px"></a></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="moadal-top-menu">
+                     <ul>
+                        <li><a href="index.html" ><img src="images/icon (1).png" alt="" width="25px"> Home</a> </a></li>
+                        <li><a href="add-coin.html"><img src="images/icon (2).png" alt="" width="25px"> Add Coin</a> </a></li>
+                        <li><a href="coin-info.html" class="active"><img src="images/icon (3).png" alt="" width="25px"> Coin Info</a> </a></li>
+                        <li><a href=""><img src="images/icon (4).png" alt="" width="25px"> Furam</a> </a></li>
+                     </ul>
+                  </div>
+                  <!--menu  -->
+                  <hr>
+                  <div class="modal-language pd">
+                     <span>Language Options</span>
+                     <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">Bangla</option>
+                        <option value="">Hindi</option>
+                        <option value="">Spenich</option>
+                        <option value="">English</option>
+                     </select>
+                  </div>
+                  <hr>
+                  <!-- language -->
+                  <div class="dark-mood">
+                     <p>Dark Mode Changing</p>
+                     <label class="switch">
+                        <input type="checkbox"  onclick="myFunction()">
+                        <span class="slider round checked"></span>
+                        <div class="img"><img src="images/moon.png" alt="" width="10px"></div>
+                        <div class="imgtwo"><img src="images/sun.png" alt="" width="10px"></div>
+                     </label>
+                  </div>
+                  <!-- dark -->
+                  <hr>
+                  <div class="support">
+                     <a href=""><img src="images/headphone.png" width="38px" style="margin-top: -3px;"> Live Support</a>
+                  </div>
+                  <!-- support -->
+                  <hr>
+                  <div class="modal-social">
+                     <h6>Social Media</h6>
+                     <ul>
+                        <a href=""><img src="images/log (1).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (2).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (3).png" alt="" width="30px"></a><br><br>
+                        <a href=""><img src="images/log (4).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (5).png" alt="" width="30px"></a>
+                        <a href=""><img src="images/log (6).png" alt="" width="30px"></a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ==================
+         Modal End Here
+         =====================-->
+      <!-- top-bar end -->
+      <div class="sidebar-fixed">
+         <ul class="icon">
+            <li><a href=""  data-toggle="modal" data-target="#left_modal_sm"><i class="fas fa-home"></i></a></li>
+            <li><a href=""  data-toggle="modal" data-target="#left_modal_sm"><img src="images/icon (1).png" alt="" width="25px"></a></li>
+            <li><a href=""  data-toggle="modal" data-target="#left_modal_sm"><img src="images/icon (2).png" alt="" width="25px"></a></li>
+            <li><a href=""  data-toggle="modal" data-target="#left_modal_sm"><img src="images/icon (3).png" alt="" width="25px"></a></li>
+            <li><a href=""  data-toggle="modal" data-target="#left_modal_sm"><img src="images/icon (4).png" alt="" width="25px"></a></li>
+            <li><a href=""  data-toggle="modal" data-target="#left_modal_sm"><img src="images/icon-(5).png" alt="" width="25px"></a></li>
+         </ul>
+         <hr>
+      </div>
+      <!-- ========================================
+         end top area
+         ============================================= -->
+
+      <div class="coin-main-area">
+        <div class="costume-container">
+          <div class="row">
+            <div class="col-md-12 barz ">
+              <a href="" class="white-text  ">Home/ </a>
+               <a href="" class="white-text">Today's best/</a> 
+               <a href="" class="white-text">Doge Earn</a> 
+            </div>
+          </div>
+          <div class="doge-earn">
+            <div class="row">
+                <div class="col-md-8">
+                  <div class="doge-left">
+                      <div class="doge-top d-flex justify-content-between">
+                          <div class="d-flex justify-content-start doge-user">
+                            <div> <img src="images/user.png" alt="" width="80px"></div>
+                            <div class="doge-user-text">
+                              <h4>Doge Earn </h4>
+                              <p class="color">$DOGEEARN <span>BSC</span> </p>
+                              <p>Contract: 0xFC969bF971757fdfB920DDEE6fFa23BFE3B8E662</p>
+                            </div>
+                          </div>
+                          <div>
+                            <span>In 6 watchlists <i class="far fa-star"></i></span>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="doge-social">
+                        <ul>
+                          <li><a href="">  <img src="images/Website.png" alt="" width="25px"> Website</a></li>
+                          <li><a href="">  <img src="images/log (3).png" alt="" width="25px"> Twitter</a></li>
+                          <li><a href="">  <img src="images/log (1).png" alt="" width="25px"> Telegam</a></li>
+                        </ul>
+                      </div>
+                      <div class="doge-left-text">
+                          <h4>HOLD $DOGEEARN, EARN BNB! </h4>
+                          <ul>
+                            <li>- 0% buy fee</li>
+                            <li>- 25% sell fee</li>
+                            <li>- 15% buys back</li>
+                            <li>- 9% to all holders in #BNB</li>
+                            <li>- 1% to marketing wallet</li>
+                          </ul>
+                          <p>Doge Earn is a buyback token on the Binance Smart Chain. </p>
+                          <p>We automatically reward our holders with BNB, it comes from the fee when you sell the token. </p>
+                          <p>There is no buy fee! Every sell transaction has a fee of 25%, a fee of 15% to buy back the token, 9% gets distributed amongst all token holders in BNB and 1% goes to our marketing wallet where we simply pay our marketing from </p>
+                          <p>Enjoy making daily passive income!<br> When the market pumping you can easily make $300+ per day, you don't have to claim the BNB. It gets distributed automatically.</p>
+                          <p class="small">Wrong information? <a href="">contact us</a> </p>
+                      </div>
+                  </div>
+                  <!-- div close -->
+                </div>
+              <!-- =========col-md-8=========== -->
+              <div class="col-md-4">
+                <div class="doge-login">
+                  <div class="doge-login-btn"><a href="">1486 Login to Vote</a></div>
+                  <div class="doge-award">
+
+                    <div class="single-award">
+                        <img src="images/doge (2).png" alt="">
+                        <p>Today's Best</p>
+                        <span>Time Gem</span>
+                        <div class="single-hover">
+                          <img src="images/doge (2).png" alt="">
+                          <h4>Today's Best</h4>
+                          <p>The most voted coin for one day in the today's best page. Today's best coin is also promoted for the next 24h!</p>
+                        </div>
+                    </div>
+                    <!-- single award -->
+                    <div class="single-award">
+                      <img src="images/doge (3).png" alt="">
+                      <p>1000 Votes</p>
+                      <span>Shark Gold</span>
+                      <div class="single-hover">
+                        <img src="images/doge (2).png" alt="">
+                        <h4>Today's Best</h4>
+                        <p>The most voted coin for one day in the today's best page. Today's best coin is also promoted for the next 24h!</p>
+                      </div>
+                    </div>
+                    <!-- single award -->
+                    <div class="single-award">
+                      <img src="images/doge (4).png" alt="">
+                      <p>500 Votes</p>
+                      <span>Dolphin Silver</span>
+                      <div class="single-hover">
+                        <img src="images/doge (2).png" alt="">
+                        <h4>Today's Best</h4>
+                        <p>The most voted coin for one day in the today's best page. Today's best coin is also promoted for the next 24h!</p>
+                      </div>
+                    </div>
+                    <!-- single award -->
+                    <div class="single-award">
+                      <img src="images/doge (5).png" alt="">
+                      <p>100 votes</p>
+                      <span>Crab Bronze</span>
+                      <div class="single-hover">
+                        <img src="images/doge (2).png" alt="">
+                        <h4>Today's Best</h4>
+                        <p>The most voted coin for one day in the today's best page. Today's best coin is also promoted for the next 24h!</p>
+                      </div>
+                    </div>
+                    <!-- single award -->
+                    <div class="single-award">
+                      <img src="images/doge (6).png" alt="">
+                    </div>
+                    <!-- single award -->
+                    <div class="single-award">
+                      <img src="images/doge (6).png" alt="">
+                    </div>
+                    <!-- single award -->
+                    
+                  </div>
+                </div>
+                <div class="text-center"> <a href="" class=" white-text">Read more about badges</a></div> 
+                <div class="single-text">
+                    <h4>Markets</h4>
+                    <a href=""><img src="images/log (5).png" alt="" width="30px"> Buy on PancakeSwap</a>
+                    <h4>Chart</h4>
+                    <a href=""><img src="images/log (5).png" alt="" width="30px">Poocoin</a>
+                    <a href=""><img src="images/log (5).png" alt="" width="30px"> Bogged Finance link</a>
+                    <h4>Timeline</h4>
+                    <div class="row">
+                      <div class="col-md-12">
+                          <div class="StyledBox-sc-13pk1d4-0 dZPhst">
+                            <div class="StyledBox-sc-13pk1d4-0 itMhhB">
+                              <div class="StyledBox-sc-13pk1d4-0 gPzyPJ"><span class="StyledText-sc-1sadyjn-0 BuNZF">Launching on</span></div>
+                              <div class="StyledBox__StyledBoxGap-sc-13pk1d4-1 jSkusI"></div>
+                              <span class="StyledText-sc-1sadyjn-0 BuNZF">16 Jul 2021</span>
+                            </div>
+                            <div class="StyledBox__StyledBoxGap-sc-13pk1d4-1 jVpjGU"></div>
+                            <div class="StyledBox-sc-13pk1d4-0 itMhhB">
+                              <div class="StyledBox-sc-13pk1d4-0 gPzyPJ"><span class="StyledText-sc-1sadyjn-0 BuNZF">Added</span></div>
+                              <div class="StyledBox__StyledBoxGap-sc-13pk1d4-1 jSkusI"></div>
+                              <span class="StyledText-sc-1sadyjn-0 BuNZF">12 Jul 2021</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="coin-table">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-one">
+                  <h4 class="white-text"><img src="images/star.png" alt=""> Promoted<img src="images/star.png" alt=""> </h4>
+                  <hr>
+                  <table class="table table-striped table-dark table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="hedcolor">Icon</th>
+                        <th scope="col" class="hedcolor">Name</th>
+                        <th scope="col" class="hedcolor">Symble</th>
+                        <th scope="col" class="hedcolor">Launch</th>
+                        <th scope="col" class="hedcolor">Marketcap</th>
+                      </tr>
+                    </thead>
+                   
+                    <tbody>
+                      <tr>
+                        <th scope="row"><i class="far fa-star"></i> <img src="images/G2o5nnw.png" alt="" width="20px"></th>
+                        <td>Mark<br><span class="small"> Jhon</span></td>
+                        <td>Otto</td>
+                        <td>$40,000</td>
+                        <td>@twitter</td>
+                        <!-- <td>
+                          <ul class="arard-li">
+                            <li><img src="images/doge (3).png" alt=""></li>
+                            <li><img src="images/doge (3).png" alt=""></li>
+                            <li><img src="images/doge (3).png" alt=""></li>
+                          </ul>
+                        </td> -->
+                        <td><a href="" class="btn btn-primary vote-btn">Vote </a> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="far fa-star"></i> <img src="images/globe.png" alt="" width="20px"></th>
+                        <td>Mark<br><span class="small"> Jhon</span></td>
+                        <td>Thornton</td>
+                        <td>$40,000</td>
+                        <td>@twitter</td>
+                        
+                        <td><a href="" class="btn btn-primary vote-btn">Vote </a> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="far fa-star"></i> <img src="images/globe.png" alt="" width="20px"></th>
+                        <td>Mark<br><span class="small"> Jhon</span></td>
+                        <td>the Bird</td>
+                        <td>$40,000</td>
+                        <td>@twitter</td>
+                       
+                        <td><a href="" class="btn btn-primary vote-btn">Vote </a> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="far fa-star"></i> <img src="images/globe.png" alt="" width="20px"></th>
+                        <td>Mark<br><span class="small"> Jhon</span></td>
+                        <td>Otto</td>
+                        <td>$40,000</td>
+                        <td>@twitter</td>
+                        
+                        <td><a href="" class="btn btn-primary vote-btn">Vote </a> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="far fa-star"></i> <img src="images/globe.png" alt="" width="20px"></th>
+                        <td>Mark<br><span class="small"> Jhon</span></td>
+                        <td>Thornton</td>
+                        <td>$40,000</td>
+                        <td>@twitter</td>
+                        
+                        <td><a href="" class="btn btn-primary vote-btn">Vote </a> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="far fa-star"></i> <img src="images/globe.png" alt="" width="20px"></th>
+                        <td>Mark<br><span class="small"> Jhon</span></td>
+                        <td>the Bird</td>
+                        <td>$40,000</td>
+                        <td>@twitter</td>
+                        
+                        <td><a href="" class="btn btn-primary vote-btn">Vote </a> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- table -->
+                </div>
+                <!-- table one -->
+                <hr>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <footer class="footer">
+        <div class="costume-container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="" width="200px">
+                        <p class="footer-p">BC.Game believes in future shaping technology! Keeping that in mind we have open source code and provably fair games. We also support instant Bitcoin deposits and withdrawals through our Lightning Node and LNURL.
+                         <br> Don’t trust. Verify it!</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-2">
+                    <div class="footer-menu">
+                      <h4>Important Link</h4>
+                        <ul>
+                            <li><a href="">JOIN US</a></li>
+                            <li><a href="">HELP CENTER</a></li>
+                            <li><a href="">User Agreement</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">APP</a></li>
+                            <li><a href="">Gamble Aware</a></li>
+                            <li><a href="">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-menu">
+                    <h4>CONTACT US</h4>
+                    <ul>
+                        <li>Help:   <a href=""> Help.bc.game</a></li>
+                        <li>Affiliate / Ads: <a href=""> Affiliate@bc.game</a></li>
+                        <li>Support:   <a href="">Support@bc.game</a></li>
+                        <li>Business:   <a href="">Business@bc.game</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="col-md-3">
+                  <div class="fotter-im-social">
+                    <h4>Social Link</h4>
+                    <ul>
+                      <li><a href=""><img src="images/svgexport-12.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-13.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-14.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-15.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-16.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-17.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-18.png" alt="" width="25px"></a></li><br><br>
+                      <li><a href=""><img src="images/svgexport-19.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-20.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-21.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-22.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-23.png" alt="" width="25px"></a></li>
+                      <li><a href=""><img src="images/svgexport-24.png" alt="" width="25px"></a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="footer-bottom">
+              <div class="row">
+                <div class="col-md-5">
+                  <a href=""><img src="images/svgexport-27.png" alt=""></a>
+                  <a href=""><img src="images/svgexport-28.png" alt=""></a>
+                  <a href=""><img src="images/svgexport-29.png" alt=""></a>
+                  <a href=""><img src="images/svgexport-30.png" alt=""></a>
+                </div>
+                <div class="col-md-2 text-center">
+                  <p>1BTC=$31884.87</p>
+                </div>
+                <div class="col-md-5"> 
+                  <p>©2021 BC.GAME ALL RIGHTS RESERVED</p>
+                </div>
+              </div>
+              <div class="top"><a href=""><i class="fas fa-sort-up"></i><br>Top</a></div>
+              
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+   </body>
+</html>

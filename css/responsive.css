@@ -1,0 +1,256 @@
+
+
+
+@media only screen and (max-width: 767px) {
+    .top-bar{
+        height: 130px;
+        display: block;
+        z-index: 222;
+        background: #1B1D21;
+    }
+    #body-pd {
+        padding: 0;
+    }
+    .header{
+        display: none;
+    }
+    :root { 
+        --header-height: 8rem;
+    }
+    .costume-container{
+        padding: 0px 10px;
+    }
+    .sidebar-fixed{
+        display: none;
+    }
+    .left-icon img, .footer-logo img{
+        width: 100px;
+    }
+    /* .main-logo{
+        display: none;
+    } */
+    /* .responsive-logo{
+        display: block;
+    } */
+    .responsive-logo img{
+        width: 30px;
+    }
+    .hubmerger-icon{
+        position: absolute;
+        top: 14px;
+        right: 30px;
+    }
+    .hubmerger-icon{
+        padding: 5px 9px;
+    }
+    .top-bar .d-flex{
+        display: grid !important;
+    }
+    .left-icon {
+        margin-bottom: 30px;
+    }
+    a.btn.btn-primary.coin-btn{
+        padding: 7px 30px;
+    }
+    .right-icon a {
+        margin-left: 10px;
+    }
+    .coin-main-area {
+        padding: 20px 0px 20px 5px;
+    }
+    .banner-area img{
+        margin-bottom: 15px;
+    }
+
+
+
+    footer.footer{
+        padding: 30px 15px;
+        text-align: center;
+    }
+    .footer-p{
+        width: 100%;
+        font-size: 11px !important;
+        line-height: 18px !important;
+        margin-top: 10px;
+    }
+    .footer-menu {
+        margin: 25px 0px;
+    }
+    .footer-menu ul li{
+        margin-right: 0px;
+        line-height: 2;
+        font-size: 10px;
+    }
+    .footer-bottom{
+        margin-top: 30px;
+    }
+    .footer-bottom img {
+        margin-right: 20px;}
+
+    .top{
+        bottom: 0;
+    }
+    .footer h4 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .footer-menu {
+        margin: 10px 0px;
+    }
+
+    .table-dark td, .table-dark th, .table-dark thead th{
+        padding: 10px 10px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .btn.btn-primary.vote-btn{
+        background: transparent;
+        padding: 0;
+        font-size: 10px;  
+    }
+    th img {
+        width: 14px;
+    }
+    .nav-tabs .nav-link, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+        padding: 5px 6px;
+        font-size: 12px;
+    }
+    .nav-tabs{
+        padding: 7px;
+        margin: 10px 0px;
+        width: 200px;
+    }
+    #dropdownMenuButton p{
+        display: none;
+    }
+    .fa-sort-down{
+        display: none;
+    }
+    .modal.fade.login-modal .modal-header{
+        min-height: 170px;
+    }
+    .modal-content.loginmodal .modal-body {
+        padding: 10px 10px 10px 20px;
+    }
+    .modal-content.loginmodal .email input, .modal-content.loginmodal .password input{
+        width: 100%;
+        height: 3rem;
+    }
+
+    .modal-content.loginmodal label, .password a {
+        font-size: 13px;
+    }
+    .log-btn input {
+        padding: 6px 30px;}
+    .agree label {
+        margin-left: 30px;
+        margin-top: -27px;
+    }
+    input[type="checkbox"]{
+        width: 15px;
+    }
+    .coin-form { padding: 15px;}
+    .doge-earn{
+        padding: 10px;
+        margin: 20px 0px;
+    }
+    .doge-top .d-flex {
+        display: block !important;
+    }
+    .doge-user-text{
+        margin-left: 0;
+    }
+    .doge-user-text p{
+        font-size: 9px;
+    }
+    .doge-user-text h4{
+        font-size: 20px;
+    }
+    .doge-user-text .color, .doge-left-text h4 {
+        font-size: 14px;}
+    .doge-social ul li a{
+        font-size: 13px;
+        margin-right: 15px;
+    }
+    .doge-left-text ul li, .doge-left-text p{
+        font-size: 12px;
+    }
+    .doge-login {
+        padding: 20px 20px 0px 20px;
+    }
+    .single-award{
+        width: 45%;
+    }
+    .single-text {
+        display: inline-grid;
+    }
+    .single-text a{
+        margin-top: 10px;
+    }
+    .single-hover{
+        padding: 10px;
+        width: 237px;
+        height: 190px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+    .costume-container,.coin-main-area {
+        padding: 0px 0px;
+    }
+    a.btn.btn-primary.coin-btn {
+    padding: 7px 24px;}
+
+    .footer .col-md-4, .footer .col-md-3 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 50%;
+    max-width: 50%;
+}
+    
+.footer-bottom .col-md-5, .footer-bottom .col-md-2 {
+    text-align: center;
+    flex: 100%;
+    max-width: 100%;}
+
+
+
+.footer-bottom .col-md-2{
+    margin-top: 30px;
+}
+
+.text-center .white-text{
+    display: none;
+}
+.single-text {
+    display: block;
+    clear: both;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    .doge-earn .col-md-8, .doge-earn .col-md-4 {
+    flex: 100%;
+    max-width: 100%;
+}
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px){
+    .doge-earn .col-md-8, .doge-earn .col-md-4 {
+    flex: 50%;
+    max-width: 50%;
+}
+}
